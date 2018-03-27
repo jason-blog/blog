@@ -1,0 +1,1 @@
+nohup java -jar &nbsp;-Dspring.profiles.active=test -Djava.security.egd=file:/dev/./urandom&nbsp;test.jar&nbsp;--spring.config.location=/test.yml &gt; /test.log 2&gt;&amp;1 &amp;

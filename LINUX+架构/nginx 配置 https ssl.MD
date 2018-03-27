@@ -1,0 +1,6 @@
+<pre class="bash" style="color:#333333;font-size:14px;text-align:justify;background-color:#FAFAFC;">server <span style="color:#7A0874;font-weight:bold;">{</span> server_name YOUR_DOMAINNAME_HERE;
+    listen <span style="color:#000000;">443</span>;
+    ssl on;
+    ssl_certificate <span style="color:#000000;font-weight:bold;">/</span>usr<span style="color:#000000;font-weight:bold;">/</span>local<span style="color:#000000;font-weight:bold;">/</span>nginx<span style="color:#000000;font-weight:bold;">/</span>conf<span style="color:#000000;font-weight:bold;">/</span>33iq.crt;
+    ssl_certificate_key <span style="color:#000000;font-weight:bold;">/</span>usr<span style="color:#000000;font-weight:bold;">/</span>local<span style="color:#000000;font-weight:bold;">/</span>nginx<span style="color:#000000;font-weight:bold;">/</span>conf<span style="color:#000000;font-weight:bold;">/</span>33iq_nopass.key; <span style="font-style:italic;color:#666666;"># 若ssl_certificate_key使用33iq.key，则每次启动Nginx服务器都要求输入key的密码。</span> </pre>
+<pre class="bash" style="color:#333333;font-size:14px;text-align:justify;background-color:#FAFAFC;"><span style="color:#7A0874;font-weight:bold;">}</span></pre>

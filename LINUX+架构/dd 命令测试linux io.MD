@@ -1,0 +1,1 @@
+&nbsp;time dd if=/dev/zero of=test.out bs=1M count=1024 oflag=direct

@@ -1,0 +1,1 @@
+<pre class="prettyprint lang-js linenums">function stop(){return false}document.oncontextmenu=stop;</pre>

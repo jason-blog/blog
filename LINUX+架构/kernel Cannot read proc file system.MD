@@ -1,0 +1,6 @@
+<p style="margin-top:0px;margin-bottom:1em;padding:0px;border:0px;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-stretch:inherit;font-size:15px;line-height:inherit;font-family:Arial, &quot;vertical-align:baseline;clear:both;color:#242729;white-space:normal;background-color:#FFFFFF;">
+	<strong style="margin:0px;padding:0px;border:0px;font-style:inherit;font-variant:inherit;font-stretch:inherit;font-size:inherit;line-height:inherit;font-family:inherit;vertical-align:baseline;">Rsyslog</strong>&nbsp;has a tendency to use 100%+ CPU on OpenVZ. I run following commands via SSH to fix the problem
+</p>
+<pre style="margin-top:0px;margin-bottom:1em;padding:5px;border:0px;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-stretch:inherit;font-size:13px;line-height:inherit;font-family:Consolas, Menlo, Monaco, &quot;vertical-align:baseline;width:auto;max-height:600px;overflow:auto;background-color:#EFF0F1;word-wrap:normal;color:#242729;"><code style="margin:0px;padding:0px;border:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:Consolas, Menlo, Monaco, &quot;vertical-align:baseline;white-space:inherit;">service rsyslog stop
+sed -i -e 's/^\$ModLoad imklog/#\$ModLoad imklog/g' /etc/rsyslog.conf
+service rsyslog start</code></pre>

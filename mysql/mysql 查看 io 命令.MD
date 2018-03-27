@@ -1,0 +1,1 @@
+<pre class="prettyprint lang-php linenums">SHOW GLOBAL status LIKE 'Bytes_%'</pre>

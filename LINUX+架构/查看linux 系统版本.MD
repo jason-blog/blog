@@ -1,0 +1,1 @@
+<em style="font-family:Arial;font-size:14px;white-space:normal;background-color:#FFFFFF;">getconf LONG_BIT</em><span style="font-family:Arial;font-size:14px;white-space:normal;background-color:#FFFFFF;">&nbsp;</span>

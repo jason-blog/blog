@@ -1,0 +1,1 @@
+<span style="color:#333333;font-family:&quot;font-size:14px;white-space:normal;background-color:#FFFFFF;">您可以使用Redis Desktop Manager或者使用php Redis Admin来管理redis，如果在阿里云上可以直接使用DMS来管理redis。</span>
